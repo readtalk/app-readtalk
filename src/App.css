@@ -32,7 +32,7 @@
 /* Judul */
 .title {
   font-size: 27px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 12px;
   color: black;
 }
@@ -40,9 +40,9 @@
 /* Deskripsi */
 .description {
   color: #3b4a54;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.5;
-  max-width: 310px;
+  max-width: 360px;
   margin: 0 auto 35px;
 }
 
