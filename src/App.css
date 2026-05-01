@@ -1,17 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ================== READTALK - COIN FLIP ================== */
+
+/* Logo Container untuk efek 3D */
+.logo-container {
+  margin-bottom: 50px;
+  perspective: 1200px;        /* Penting untuk efek coin flip */
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+.App-logo {
+  height: 140px;
+  pointer-events: none;
+  transform-style: preserve-3d;
 }
+
+/* Animasi Coin Flip (bukan spin biasa) */
+@keyframes coinFlip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1800deg);   /* 5 kali putaran penuh */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: coinFlip 4s ease-in-out infinite;
+  }
+}
+
+/* ================== LAYOUT & TYPOGRAPHY ================== */
 
 .App {
   min-height: 100vh;
   background-color: #ffffff;
-  color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,22 +41,6 @@ body {
   text-align: center;
 }
 
-/* Logo Container */
-.logo-container {
-  margin-bottom: 48px;
-}
-
-.logo {
-  height: 120px;
-  pointer-events: none;
-}
-
-/* Flip Logo (horizontal flip) */
-.flipped {
-  transform: scaleX(-1);     /* Ini yang bikin logo mirror / flip */
-}
-
-/* Judul */
 .title {
   font-size: 28px;
   font-weight: 600;
@@ -43,7 +48,6 @@ body {
   color: #1f1f1f;
 }
 
-/* Deskripsi */
 .description {
   color: #555555;
   font-size: 15.5px;
@@ -54,7 +58,6 @@ body {
 
 .policy-link {
   color: #007aff;
-  cursor: pointer;
 }
 
 .policy-link:hover {
@@ -65,20 +68,15 @@ body {
 .language-selector {
   background-color: #f1f1f1;
   border: 1px solid #e0e0e0;
-  color: #333333;
+  color: #333;
   padding: 10px 24px;
-  border-radius: 9999px;
+  border-radius: 50px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-size: 15px;
   margin-bottom: 48px;
   cursor: pointer;
-}
-
-.arrow {
-  font-size: 12px;
-  margin-left: 4px;
 }
 
 /* Tombol Agree */
@@ -94,12 +92,11 @@ body {
   text-decoration: none;
   display: inline-block;
   box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
-  transition: all 0.2s ease;
+  transition: all 0.2s;
 }
 
 .agree-button:hover {
   background-color: #16a34a;
-  transform: translateY(-1px);
 }
 
 .agree-button:active {
