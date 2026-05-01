@@ -9,7 +9,7 @@
   padding: 20px;
 }
 
-/* Logo + Coin Flip Animation */
+/* Logo + Coin Flip */
 .App-logo {
   height: 130px;
   pointer-events: none;
@@ -44,6 +44,16 @@
   line-height: 1.5;
   max-width: 310px;
   margin: 0 auto 35px;
+}
+
+/* Privacy & Terms Link - Warna Merah */
+.policy-link {
+  color: #ff0000;
+  font-weight: 500;
+}
+
+.policy-link:hover {
+  text-decoration: underline;
 }
 
 /* Language Selector */
