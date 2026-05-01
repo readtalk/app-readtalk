@@ -20,7 +20,7 @@ function App() {
       </p>
 
       <div className="language-selector">
-        🌐 English <span style={{fontSize: '12px'}}>▼</span>
+        🌐 English <span style={{ fontSize: '12px' }}>▼</span>
       </div>
 
       <a
