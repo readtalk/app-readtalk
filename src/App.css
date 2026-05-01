@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,7 @@
 /* Deskripsi */
 .description {
   color: #3b4a54;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   max-width: 360px;
   margin: 0 auto 35px;
