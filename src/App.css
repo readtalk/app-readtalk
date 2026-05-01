@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: #ffffff;
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,7 @@
 /* Deskripsi */
 .description {
   color: #3b4a54;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   max-width: 360px;
   margin: 0 auto 35px;
@@ -60,7 +60,7 @@
 .language-selector {
   background-color: #f0f0f0;
   padding: 10px 24px;
-  border-radius: 50px;
+  border-radius: 40px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -76,7 +76,7 @@
   font-weight: 600;
   font-size: 17px;
   padding: 16px 40px;
-  border-radius: 50px;
+  border-radius: 40px;
   text-decoration: none;
   display: inline-block;
   max-width: 320px;
