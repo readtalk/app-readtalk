@@ -4,11 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* Logo Bawaan dengan Flip */}
       <div className="logo-container">
         <img 
           src={logo} 
-          className="logo flipped" 
+          className="App-logo" 
           alt="ReadTalk Logo" 
         />
       </div>
@@ -21,7 +20,7 @@ function App() {
       </p>
 
       <div className="language-selector">
-        🌐 English <span className="arrow">▼</span>
+        🌐 English <span style={{fontSize: '12px'}}>▼</span>
       </div>
 
       <a
